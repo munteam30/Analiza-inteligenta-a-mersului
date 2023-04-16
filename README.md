@@ -1,2 +1,2 @@
-# Analiza-inteligent-a-mersului
+# Analiza-inteligenta-a-mersului
 Proiect realizat pentru sustinerea lucrarii de dizertație
