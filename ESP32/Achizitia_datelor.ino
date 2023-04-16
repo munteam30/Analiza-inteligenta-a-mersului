@@ -1,5 +1,6 @@
 #include <Wire.h>
 #include "MPU9250.h"
+// Pentru instalarea librariei am optat pentru libraria din Arduino IDE
 
 MPU9250 imu;
 
