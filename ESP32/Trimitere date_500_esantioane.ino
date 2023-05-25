@@ -91,6 +91,6 @@ String send_data(){
 
   // Serial.print(";");
 //   Serial.println(roll);
-  return String(accelXFiltered,4)+String(";")+String(accelXFiltered,4)+String(";")+String(pitch)+String(";")+String(roll);
+  return String(accelXFiltered,4)+String(";")+String(accelYFiltered,4)+String(";")+String(pitch)+String(";")+String(roll);
 
 }
