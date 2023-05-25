@@ -26,7 +26,7 @@ void setup() {
   IMU.setGyroRange(MPU9250::GYRO_RANGE_1000DPS);
   // setting DLPF bandwidth to 20 Hz
   IMU.setDlpfBandwidth(MPU9250::DLPF_BANDWIDTH_20HZ);
-  // setting SRD to 19 for a 50 Hz update rate
+  // setting SRD to 0 for a 1000 Hz update rate
   IMU.setSrd(0);
   kfAccelX.setProcessNoise(0.1);
   kfAccelY.setProcessNoise(0.1);
@@ -87,10 +87,10 @@ String send_data(){
   // Serial.print(accelYFiltered);
 
   // Serial.print(";");
-  Serial.print(pitch);
+//   Serial.print(pitch);
 
   // Serial.print(";");
-  Serial.println(roll);
-  return String(accelXFiltered)+String(";")+String(accelXFiltered)+String(";")+String(pitch)+String(";")+String(roll);
+//   Serial.println(roll);
+  return String(accelXFiltered,4)+String(";")+String(accelXFiltered,4)+String(";")+String(pitch)+String(";")+String(roll);
 
 }
